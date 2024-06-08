@@ -1,0 +1,80 @@
+Q1 Swap the number without using third variable--
+
+x=20
+y=30
+print(f"before swap: x={x},y={y}")
+for _ in range(1):
+  x=x+y
+  y=x-y
+  x=x-y
+  print(f"after swap: x={x},y={y}")
+
+OUTPUT-- Before swap x=20,y=30
+	After swap x=30, y=20
+__________________________________________
+
+Q2 : Write a Program to extract each digit from an integer in the reverse order.
+For example, If the given int is 7536, the output shall be “6 3 5 7“, with a space separating the
+digits----------
+
+i=int(input("enter the value"))
+rev=0
+while(i>0):
+  rev=(rev*10)+(i%10)
+  i=i//10
+print("reversed number is:",rev)
+
+output--enter the number 12345
+	reversed number is:54321
+
+__________________________________________________________
+
+Q3 Write a program that will give you the sum of 3 digits
+--------------------------------------------------------------
+i=int(input("enter the value"))
+sum=0
+while(i>0):
+  sum=sum+(i%10)
+  i=i//10
+print("sum of the digits-",sum)
+
+OUTPUT-- enter the number 789
+	sum of the digits- 24
+
+_______________________________________________________
+
+Q4 Write a program that will take three digits from the user and add the square of each
+digit.
+-----------------------------------------------------------------------------
+
+i=int(input("enter the value"))
+sum=0
+while(i>0):
+  sum= sum+ (i%10)*(i%10)
+  i=i//10
+print("sum of square of digits of given number is: ",sum)
+
+OUTPUT-- Enter the value 345
+	sum of square of digits of given number is: 50
+
+________________________________________________________________________________
+
+
+Q5 Write a program that will check whether the number is armstrong number or not.
+------------------------------------------------------------------------------------
+
+i=int(input("enter the number"))
+temp=i
+sum=0
+while(i>0):
+    sum=sum+(i%10)*(i%10)*(i%10)
+    i=i//10
+if temp==sum:
+    print("armstrong number")
+else:
+    print("it is not an armstrong number")  
+
+OUTPUT-- enter the number 153
+	Armstrong number
+
+_______________________________________________________
